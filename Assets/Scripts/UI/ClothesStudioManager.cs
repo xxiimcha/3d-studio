@@ -33,10 +33,10 @@ public class ClothesStudioManager : MonoBehaviour
             hipsSlider.value = GameManager.Instance.Hips;
             waistSlider.value = GameManager.Instance.Waist;
 
-            heightValueTxt.text = GameManager.Instance.Height.ToString() + " inch";
-            bustValueTxt.text = GameManager.Instance.Bust.ToString() + " inch";
-            hipsValueTxt.text = GameManager.Instance.Hips.ToString() + " inch";
-            waistValueTxt.text = GameManager.Instance.Waist.ToString() + " inch";
+            heightValueTxt.text = GameManager.Instance.Height.ToString() + " cm";
+            bustValueTxt.text = GameManager.Instance.Bust.ToString() + " cm";
+            hipsValueTxt.text = GameManager.Instance.Hips.ToString() + " cm";
+            waistValueTxt.text = GameManager.Instance.Waist.ToString() + " cm";
 
             // Subscribe to GameManager events
             GameManager.Instance.OnDressNameChanged += UpdateDressName;
@@ -74,7 +74,7 @@ public class ClothesStudioManager : MonoBehaviour
         if (GameManager.Instance != null)
         {
             GameManager.Instance.Height = value;
-            heightValueTxt.text = value.ToString() + " inch";
+            heightValueTxt.text = value.ToString() + " cm";
         }
     }
 
@@ -83,7 +83,7 @@ public class ClothesStudioManager : MonoBehaviour
         if (GameManager.Instance != null)
         {
             GameManager.Instance.Bust = value;
-            bustValueTxt.text = value.ToString() + " inch";
+            bustValueTxt.text = value.ToString() + " cm";
         }
     }
 
@@ -92,7 +92,7 @@ public class ClothesStudioManager : MonoBehaviour
         if (GameManager.Instance != null)
         {
             GameManager.Instance.Hips = value;
-            hipsValueTxt.text = value.ToString() + " inch";
+            hipsValueTxt.text = value.ToString() + " cm";
         }
     }
 
@@ -101,7 +101,7 @@ public class ClothesStudioManager : MonoBehaviour
         if (GameManager.Instance != null)
         {
             GameManager.Instance.Waist = value;
-            waistValueTxt.text = value.ToString() + " inch";
+            waistValueTxt.text = value.ToString() + " cm";
         }
     }
 
